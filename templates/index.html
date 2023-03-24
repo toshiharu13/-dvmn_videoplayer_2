@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vidplr</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../dist/favicon-32x32.png">
+    <link rel="stylesheet" href="../dist/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/main.css">
+</head>
+<body>
+<div id="player" class="player-container">
+    <div class="js-video-container flex-grow"></div>
+    <div  class="buttons-container">
+        <div>
+          <button class="js-play-button players-buttons">
+            <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div>
+          <button class="js-pause-button players-buttons" hidden>
+            <i class="fa fa-pause fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div>
+          <button class="js-mute-button players-buttons" hidden>
+            <i class="fa fa-volume-up fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div>
+          <button class="js-volume-button players-buttons" hidden>
+            <i class="fa fa-volume-off fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="flex-grow"></div>
+        <div>
+          <button class="js-fullscreen-button players-buttons">
+            <i class="fa fa-arrows-alt fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+<script src="../dist/player.js"></script>
+
+<script type="text/javascript">
+  createPlayer({
+    elementId: 'player',
+    src: 'https://dvmn.org/media/filer_public/d0/16/d016d9b8-4180-4bb9-ad83-0241f61627b8/samsung_demo_-_alive_in_color.mp4'
+});
+</script>
+</body>
+</html>
