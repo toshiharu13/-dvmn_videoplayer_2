@@ -2,5 +2,5 @@ from livereload import Server, shell
 
 
 server = Server()
-server.watch('docs/*.rst', shell('make html', cwd='docs'))
-server.serve(root='docs/_build/html')
+server.watch('dist',)
+server.serve(default_filename='dist/index.html')
