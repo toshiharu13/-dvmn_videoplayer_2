@@ -7,8 +7,10 @@
   cursor: pointer;
   color: white;
   background-color: transparent;
-  margin-right: 7px;
-  margin-bottom: 5px;
+}
+.valume-button {
+  margin-left: 8px;
+  margin-top: 0px;
   height: 30px;
   width: 30px;
 }
@@ -21,4 +23,17 @@
 }
 .flex-grow {
   flex-grow: 1;
+}
+.full-screen-button {
+  margin-right: 3px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.play-button {
+  margin-left: 1px;
+  margin-bottom: 6px;
+  height: 30px;
+  width: 30px;
 }
